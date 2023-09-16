@@ -1,0 +1,26 @@
+/*Pantallas*/
+$breakpoint-xs: 480px;
+$breakpoint-sm: 768px;
+$breakpoint-md: 992px;
+$breakpoint-lg: 1360px;
+
+@mixin media($media){
+    @if $media == xs {
+        @media (max-width: $breakpoint-sm) { @content; }
+    }
+    @else if $media == sm {
+        @media (min-width: $breakpoint-sm) and (max-width: $breakpoint-md) { @content; }
+    }
+    @else if $media == md {
+        @media (min-width: $breakpoint-md) and (max-width: $breakpoint-lg) { @content; }
+    }
+    @else if $media == lg {
+        @media (min-width: $breakpoint-lg) { @content; }
+    }
+}
+/*Fuentes*/
+$font-family_1: 'Bebas Neue', sans-serif;
+$font-family_2: 'Mountains of Christmas', cursive;
+$font-family_3: 'Arial'
+
+

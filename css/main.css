@@ -1,0 +1,777 @@
+@charset "UTF-8";
+/*Pantallas*/
+/*Fuentes*/
+@import url(https://fonts.googleapis.com/css2?family=Mountains+of+Christmas&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap);
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-image: url(../img/Fondo-HTML.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/*Header*/
+header {
+  height: auto;
+  position: sticky;
+  top: 0%;
+  z-index: 5;
+}
+header nav {
+  height: auto;
+  background-image: url(../img/Fondo-Header.png);
+  background-size: contain no-repeat;
+}
+header nav .container-fluid .navbar-brand {
+  font-family: "Mountains of Christmas", cursive;
+  font-size: 5rem;
+  color: rgb(255, 215, 0);
+  -webkit-text-stroke: 0.8px black;
+}
+header nav .container-fluid .nav-link {
+  font-family: "Bebas Neue", sans-serif;
+  text-decoration: none;
+  color: rgb(138, 43, 227);
+  background-color: rgb(255, 240, 245);
+  border-color: rgb(184, 134, 11);
+  border-style: inset;
+  border-width: 5px;
+  font-size: 2.2rem;
+  font-weight: 600;
+  padding-top: 2px;
+  padding-bottom: 1px;
+  margin-right: 10px;
+}
+header nav .container-fluid .navbar-toggler {
+  color: rgb(0, 0, 0);
+  background-color: rgb(255, 240, 245);
+}
+
+/*H1 de cada página secundaria*/
+#main-conocenos .h1-pages, #main-objetos-para-mirar .h1-pages, #main-taller-del-ojo .h1-pages, #main-contacto .h1-pages {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 12rem;
+}
+@media (max-width: 768px) {
+  #main-conocenos .h1-pages, #main-objetos-para-mirar .h1-pages, #main-taller-del-ojo .h1-pages, #main-contacto .h1-pages {
+    font-size: 6rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-conocenos .h1-pages, #main-objetos-para-mirar .h1-pages, #main-taller-del-ojo .h1-pages, #main-contacto .h1-pages {
+    font-size: 7rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-conocenos .h1-pages, #main-objetos-para-mirar .h1-pages, #main-taller-del-ojo .h1-pages, #main-contacto .h1-pages {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 1360px) {
+  #main-conocenos .h1-pages, #main-objetos-para-mirar .h1-pages, #main-taller-del-ojo .h1-pages, #main-contacto .h1-pages {
+    font-size: 9rem;
+  }
+}
+
+/*Main - INDEX*/
+#main-index .div-h1-index {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+#main-index .div-h1-index .h1-index {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 12rem;
+  margin-top: 2.5%;
+}
+@media (max-width: 768px) {
+  #main-index .div-h1-index .h1-index {
+    font-size: 8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-index .div-h1-index .h1-index {
+    font-size: 9rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-index .div-h1-index .h1-index {
+    font-size: 10rem;
+  }
+}
+@media (min-width: 1360px) {
+  #main-index .div-h1-index .h1-index {
+    font-size: 11rem;
+  }
+}
+#main-index .div-h1-index .span-en-h1-index {
+  font-family: "Mountains of Christmas", cursive;
+  color: rgb(255, 215, 0);
+  -webkit-text-stroke: 1.5px black;
+  margin-bottom: 0%;
+}
+#main-index .div-h1-index .txt-intro {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  font-size: 4rem;
+  width: 60%;
+  margin-left: 20%;
+  margin-right: 20%;
+  margin-bottom: 5%;
+}
+@media (max-width: 768px) {
+  #main-index .div-h1-index .txt-intro {
+    font-size: 2.25rem;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-index .div-h1-index .txt-intro {
+    font-size: 2.75rem;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-index .div-h1-index .txt-intro {
+    font-size: 3.25rem;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-index .div-h1-index .txt-intro {
+    font-size: 3.75rem;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+#main-index .div-img-objeto-index {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+#main-index .div-img-objeto-index .img-objeto-index {
+  display: flex;
+  border-radius: 35px;
+  margin-top: 2.5%;
+  margin-bottom: 2.5%;
+  width: 100%;
+}
+@media (max-width: 768px) {
+  #main-index .div-img-objeto-index .img-objeto-index {
+    width: 100%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-index .div-img-objeto-index .img-objeto-index {
+    width: 90%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-index .div-img-objeto-index .img-objeto-index {
+    width: 80%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-index .div-img-objeto-index .img-objeto-index {
+    width: 70%;
+  }
+}
+
+/*Main - CONOCENOS*/
+#main-conocenos .flex-container {
+  display: flex;
+  flex-direction: row;
+}
+#main-conocenos .flex-container .div-img-parrafo-conocenos {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  gap: 1%;
+  margin-bottom: 2.5%;
+  background-color: rgb(95, 158, 160);
+}
+#main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-left {
+  display: flex;
+  border: 2px solid rgb(96, 44, 4);
+  width: 60%;
+}
+@media (max-width: 768px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-left {
+    width: 85%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-left {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-left {
+    width: 75%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-left {
+    width: 70%;
+  }
+}
+#main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-left {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(96, 44, 4);
+  font-size: 2.5rem;
+  word-spacing: 0.02px;
+  line-height: 95%;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+}
+@media (max-width: 768px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-left {
+    font-size: 2.2rem;
+    word-spacing: 0.002px;
+    line-height: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-left {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-left {
+    width: 75%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-left {
+    width: 70%;
+  }
+}
+#main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-right {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 2.5rem;
+  word-spacing: 0.02px;
+  line-height: 95%;
+  margin: 2.5% 2.5% 2.5% 2.5%;
+}
+@media (max-width: 768px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-right {
+    font-size: 2.2rem;
+    word-spacing: 0.002px;
+    line-height: 80%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-right {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-right {
+    width: 75%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .parrafo-en-div-right {
+    width: 70%;
+  }
+}
+#main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-right {
+  display: flex;
+  border: 2px solid;
+  width: 60%;
+  margin-bottom: 1%;
+}
+@media (max-width: 768px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-right {
+    width: 85%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-right {
+    width: 80%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-right {
+    width: 75%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-conocenos .flex-container .div-img-parrafo-conocenos .img-en-div-right {
+    width: 70%;
+  }
+}
+
+/*Main - OBJETOS PARA MIRAR*/
+#main-objetos-para-mirar section .div-objeto1, #main-objetos-para-mirar section .div-objeto2, #main-objetos-para-mirar section .div-objeto3, #main-objetos-para-mirar section .div-objeto4, #main-objetos-para-mirar section .div-objeto5 {
+  background-color: rgb(48, 80, 80);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+}
+#main-objetos-para-mirar section .div-objeto1 .h2-nombre-objeto, #main-objetos-para-mirar section .div-objeto2 .h2-nombre-objeto, #main-objetos-para-mirar section .div-objeto3 .h2-nombre-objeto, #main-objetos-para-mirar section .div-objeto4 .h2-nombre-objeto, #main-objetos-para-mirar section .div-objeto5 .h2-nombre-objeto {
+  display: flex;
+  font-family: "Mountains of Christmas", cursive;
+  color: rgb(255, 215, 0);
+  -webkit-text-stroke: 1px black;
+  font-size: 4rem;
+  background-color: rgb(255, 240, 245);
+  border-color: rgb(0, 0, 0);
+  border-style: ridge;
+  border-radius: 15px;
+  margin-top: 1%;
+}
+@media (max-width: 768px) {
+  #main-objetos-para-mirar section .div-objeto1, #main-objetos-para-mirar section .div-objeto2, #main-objetos-para-mirar section .div-objeto3, #main-objetos-para-mirar section .div-objeto4, #main-objetos-para-mirar section .div-objeto5 {
+    font-size: 4.4rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-objetos-para-mirar section .div-objeto1, #main-objetos-para-mirar section .div-objeto2, #main-objetos-para-mirar section .div-objeto3, #main-objetos-para-mirar section .div-objeto4, #main-objetos-para-mirar section .div-objeto5 {
+    font-size: 4.3rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-objetos-para-mirar section .div-objeto1, #main-objetos-para-mirar section .div-objeto2, #main-objetos-para-mirar section .div-objeto3, #main-objetos-para-mirar section .div-objeto4, #main-objetos-para-mirar section .div-objeto5 {
+    font-size: 4.2rem;
+  }
+}
+@media (min-width: 1360px) {
+  #main-objetos-para-mirar section .div-objeto1, #main-objetos-para-mirar section .div-objeto2, #main-objetos-para-mirar section .div-objeto3, #main-objetos-para-mirar section .div-objeto4, #main-objetos-para-mirar section .div-objeto5 {
+    font-size: 4.1rem;
+  }
+}
+#main-objetos-para-mirar section .img-objeto-page2 {
+  display: flex;
+  margin-top: 1%;
+}
+@media (max-width: 768px) {
+  #main-objetos-para-mirar section .img-objeto-page2 {
+    width: 55%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-objetos-para-mirar section .img-objeto-page2 {
+    width: 45%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-objetos-para-mirar section .img-objeto-page2 {
+    width: 35%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-objetos-para-mirar section .img-objeto-page2 {
+    width: 25%;
+  }
+}
+#main-objetos-para-mirar section .texto-objeto-page2 {
+  display: flex;
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 2.6rem;
+  width: 60%;
+  margin-top: 1%;
+}
+@media (max-width: 768px) {
+  #main-objetos-para-mirar section .texto-objeto-page2 {
+    font-size: 2.2rem;
+    line-height: 90%;
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-objetos-para-mirar section .texto-objeto-page2 {
+    font-size: 2.3rem;
+    line-height: 100%;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-objetos-para-mirar section .texto-objeto-page2 {
+    font-size: 2.4rem;
+    line-height: 110%;
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-objetos-para-mirar section .texto-objeto-page2 {
+    font-size: 2.5rem;
+    line-height: 120%;
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+#main-objetos-para-mirar section .video-objeto-page2 {
+  display: flex;
+  width: 50%;
+  margin-bottom: 1%;
+}
+@media (max-width: 768px) {
+  #main-objetos-para-mirar section .video-objeto-page2 {
+    width: 70%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-objetos-para-mirar section .video-objeto-page2 {
+    width: 65%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-objetos-para-mirar section .video-objeto-page2 {
+    width: 60%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-objetos-para-mirar section .video-objeto-page2 {
+    width: 55%;
+  }
+}
+#main-objetos-para-mirar section .div-objeto2 {
+  background-color: rgb(59, 111, 72);
+}
+#main-objetos-para-mirar section .div-objeto3 {
+  background-color: rgb(173, 185, 66);
+}
+#main-objetos-para-mirar section .div-objeto4 {
+  background-color: rgb(212, 141, 34);
+}
+#main-objetos-para-mirar section .div-objeto5 {
+  background-color: rgb(240, 49, 39);
+}
+
+/*Main - TALLER DEL OJO*/
+#main-taller-del-ojo .h2-taller {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  font-size: 4rem;
+  text-align: center;
+  width: 75%;
+  margin-left: 12.5%;
+  margin-right: 12.5%;
+}
+@media (max-width: 768px) {
+  #main-taller-del-ojo .h2-taller {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-taller-del-ojo .h2-taller {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-taller-del-ojo .h2-taller {
+    font-size: 3.25rem;
+  }
+}
+@media (min-width: 1360px) {
+  #main-taller-del-ojo .h2-taller {
+    font-size: 3.75rem;
+  }
+}
+#main-taller-del-ojo section .carousel {
+  display: flex;
+  width: 100%;
+  margin-bottom: 2.5%;
+}
+@media (min-width: 1360px) {
+  #main-taller-del-ojo section .carousel {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-taller-del-ojo section .carousel {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-taller-del-ojo section .carousel {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+}
+
+/*Main - CONTACTO*/
+#main-contacto .texto-inicial {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(0, 0, 0);
+  text-align: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  font-size: 4rem;
+}
+@media (max-width: 768px) {
+  #main-contacto .texto-inicial {
+    font-size: 2.25rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-contacto .texto-inicial {
+    font-size: 2.75rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-contacto .texto-inicial {
+    font-size: 3.25rem;
+  }
+}
+@media (min-width: 1360px) {
+  #main-contacto .texto-inicial {
+    font-size: 3.75rem;
+  }
+}
+#main-contacto section form {
+  background-color: rgb(255, 99, 71);
+  border: 10px solid black;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-bottom: 2.5%;
+  width: 50%;
+}
+@media (max-width: 768px) {
+  #main-contacto section form {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-contacto section form {
+    width: 65%;
+    margin-left: 17.5%;
+    margin-right: 17.5%;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-contacto section form {
+    width: 60%;
+    margin-left: 20%;
+    margin-right: 20%;
+  }
+}
+@media (min-width: 1360px) {
+  #main-contacto section form {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
+  }
+}
+#main-contacto section form div .divs-nombre-campo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+#main-contacto section form div .div-botones {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+}
+@media (max-width: 768px) {
+  #main-contacto section form div .div-botones {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+}
+#main-contacto section form div .nombre-campo {
+  text-align: center;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 2.5rem;
+}
+@media (max-width: 768px) {
+  #main-contacto section form div .nombre-campo {
+    font-size: 1.8rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-contacto section form div .nombre-campo {
+    font-size: 1.9rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-contacto section form div .nombre-campo {
+    font-size: 2.2rem;
+  }
+}
+@media (min-width: 1360px) {
+  #main-contacto section form div .nombre-campo {
+    font-size: 2.5rem;
+  }
+}
+#main-contacto div .area-input {
+  box-sizing: border-box;
+  text-align: center;
+  font-family: "Arial";
+  font-size: 2.3rem;
+}
+@media (max-width: 768px) {
+  #main-contacto div .area-input {
+    font-size: 1.6rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-contacto div .area-input {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-contacto div .area-input {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1360px) {
+  #main-contacto div .area-input {
+    font-size: 2.3rem;
+  }
+}
+#main-contacto div .botones {
+  font-family: inherit;
+  font-size: 2.3rem;
+  background: rgb(255, 215, 0);
+  color: rgb(0, 0, 0);
+  padding: 0.7em 1em;
+  padding-left: 0.9em;
+  display: flex;
+  justify-content: center;
+  border: none;
+  border-radius: 16px;
+  overflow: hidden;
+  transition: all 0.2s;
+  margin-bottom: 1%;
+}
+@media (max-width: 768px) {
+  #main-contacto div .botones {
+    font-size: 1.4rem;
+  }
+}
+@media (min-width: 768px) and (max-width: 992px) {
+  #main-contacto div .botones {
+    font-size: 1.7rem;
+  }
+}
+@media (min-width: 992px) and (max-width: 1360px) {
+  #main-contacto div .botones {
+    font-size: 2rem;
+  }
+}
+@media (min-width: 1360px) {
+  #main-contacto div .botones {
+    font-size: 2.3rem;
+  }
+}
+#main-contacto button span {
+  display: block;
+  margin-left: 0.3em;
+  transition: all 0.3s ease-in-out;
+}
+#main-contacto button svg {
+  display: block;
+  transform-origin: center center;
+  transition: transform 0.3s ease-in-out;
+}
+#main-contacto button:hover .svg-wrapper {
+  animation: fly-1 0.6s ease-in-out infinite alternate;
+}
+#main-contacto button:hover svg {
+  transform: translateX(1.2em) rotate(45deg) scale(1.1);
+}
+#main-contacto button:hover span {
+  transform: translateX(5em);
+}
+#main-contacto button:active {
+  transform: scale(0.95);
+}
+@keyframes fly-1 {
+  from {
+    transform: translateY(0.1em);
+  }
+  to {
+    transform: translateY(-0.1em);
+  }
+}
+
+/*Footer*/
+footer .container-fluid .footer-dereojo {
+  font-family: "Mountains of Christmas", cursive;
+  color: rgb(255, 215, 0);
+  -webkit-text-stroke: 0.3px black;
+  font-size: 25px;
+  margin-bottom: 2px;
+}
+footer .container-fluid .texto-derechos {
+  font-family: "Bebas Neue", sans-serif;
+  color: rgb(255, 255, 255);
+  font-size: 18px;
+}
+footer .container-fluid .lista {
+  list-style: none;
+  font-family: "Bebas Neue", sans-serif;
+  font-size: 18px;
+  margin-bottom: 2px;
+}
+footer .container-fluid .lista .nombre-lista {
+  color: rgb(255, 255, 255);
+  text-decoration: underline;
+  margin-bottom: 2px;
+}
+footer .container-fluid .lista .link-footer {
+  color: rgb(240, 216, 187);
+  text-decoration: none;
+}
+footer .container-fluid .lista .link-footer :hover {
+  color: rgb(166, 43, 43);
+}
+
+/*# sourceMappingURL=main.css.map */
