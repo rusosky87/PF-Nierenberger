@@ -569,60 +569,52 @@ header nav .container-fluid .navbar-toggler {
 #main-contacto section form {
   background-color: rgb(255, 99, 71);
   border: 10px solid black;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin-left: auto;
+  margin-right: auto;
   margin-bottom: 2.5%;
   width: 50%;
 }
 @media (max-width: 768px) {
   #main-contacto section form {
     width: 70%;
-    margin-left: 15%;
-    margin-right: 15%;
+    margin: auto;
   }
 }
 @media (min-width: 768px) and (max-width: 992px) {
   #main-contacto section form {
     width: 65%;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+    margin: auto;
   }
 }
 @media (min-width: 992px) and (max-width: 1360px) {
   #main-contacto section form {
     width: 60%;
-    margin-left: 20%;
-    margin-right: 20%;
+    margin: auto;
   }
 }
 @media (min-width: 1360px) {
   #main-contacto section form {
     width: 50%;
-    margin-left: 25%;
-    margin-right: 25%;
+    margin: auto;
   }
 }
 #main-contacto section form div .divs-nombre-campo {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  width: 80%;
-  margin-left: 10%;
-  margin-right: 10%;
+  margin: auto;
 }
 #main-contacto section form div .div-botones {
   display: flex;
   flex-direction: column;
   justify-content: center;
   width: 50%;
-  margin-left: 25%;
-  margin-right: 25%;
+  margin: auto;
 }
 @media (max-width: 768px) {
   #main-contacto section form div .div-botones {
     width: 65%;
-    margin-left: 17.5%;
-    margin-right: 17.5%;
+    margin: auto;
   }
 }
 #main-contacto section form div .nombre-campo {
